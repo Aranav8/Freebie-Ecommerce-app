@@ -11,14 +11,7 @@ import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      options: FirebaseOptions(
-    apiKey: 'AIzaSyCz3kiFODgdUJxyEippdQrhqwkfSEyM-kA',
-    appId: '1:867432634728:android:497905c7cf87ea0a775edd',
-    projectId: 'freebie-6a592',
-    storageBucket: 'freebie-6a592.appspot.com',
-    messagingSenderId: '867432634728',
-  ));
+  await Firebase.initializeApp();
   runApp(
     MultiProvider(
       providers: [
